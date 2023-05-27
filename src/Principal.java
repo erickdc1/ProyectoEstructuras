@@ -40,6 +40,7 @@ public class Principal {
                         opc = sc.nextInt();
                         switch (opc) {
                             case 1:
+                                
                                 break;
                             case 2:
                                 break;
