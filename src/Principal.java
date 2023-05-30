@@ -1,20 +1,21 @@
 
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-
 /**
  *
  * @author Erick DC
  */
 public class Principal {
-    public static void main(String [] args){
+
+    public static void main(String[] args) {
         int opc;
-    Scanner sc = new Scanner(System.in);
-    boolean salir = false;
+        Scanner sc = new Scanner(System.in);
+        boolean salir = false;
         while (!salir) {
             System.out.println("Proyecto Final Estructuras");
             System.out.println("Temas del semestre");
@@ -28,29 +29,46 @@ public class Principal {
             opc = sc.nextInt();
             switch (opc) {
                 case 1:
-                    
-                    break;
-                case 2:
                     boolean sal = false;
                     while (!sal) {
-                        System.out.println("Metodos de busqueda");
-                        System.out.println("Eliga un tema");
-                        System.out.println("1. Busqueda Secuencial");
-                        System.out.println("2. Busqueda Binaria");
+                        System.out.println("Recursividad");
+                        System.out.println("1. Ejemlo 1: Recursividad");
+                        System.out.println("2. Ejemplo 2: Recursividad Fcatorial");
+                        System.out.println("3. Ejemplo 3: Recursividad en una panaderia");
+                        System.out.println("4. Salir");
                         opc = sc.nextInt();
                         switch (opc) {
                             case 1:
-                                
+                                Clase_Principal recur = new Clase_Principal();
+                                recur.main(args);
                                 break;
-                                //HOLA :)))
                             case 2:
+                                ClasePrinci fac = new ClasePrinci();
+                                fac.main(args);
                                 break;
-                                //HOLA MUNDO :)())()()()()():
-                            case 3: 
-                            	break;
-                            	//Hola c:
+                            case 3:
+                                Principal_1 pan = new Principal_1();
+                                pan.main(args);
+                                break;
+                            case 4:
+                                JOptionPane.showMessageDialog(null, "Aplicacion finalizada",
+                                        "FIN", JOptionPane.QUESTION_MESSAGE);
+                                break;
+
+                            default:
+                                JOptionPane.showMessageDialog(null, "Opcion incorrecta",
+                                        "Intente nuevamente", JOptionPane.QUESTION_MESSAGE);
+
                         }
                     }
+                    break;
+                case 2:
+
+                    System.out.println("En este partado encontraras un ejemplo de codigo "
+                            + "que contiene el metodo de busqueda binaria y secuencial");
+                    Pedir_Datos busq = new Pedir_Datos();
+                    busq.main(args);
+
                     break;
                 case 3:
                     break;
