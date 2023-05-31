@@ -80,8 +80,8 @@ public class Principal {
                         System.out.println("Ordenamiento Mezcla Natural");
                         System.out.println("Ordenamiento Radix");
                         System.out.println("Ordenamiento Quicksort");
+                        System.out.println("Ordenamiento Mezcla Directa");
                         System.out.println("Ordenamiento Intercalacion");
-                        System.out.println("Ordenamiento Intercalacion directa");
                         opc = sc.nextInt();
                         switch (opc){
                             case 1:
@@ -108,5 +108,9 @@ public class Principal {
                     break;
             }
         }
+    }
+
+    private static PrincipalShell PrincipalShell() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
