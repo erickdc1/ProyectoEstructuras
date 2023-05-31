@@ -96,6 +96,9 @@ public class Principal {
                                 PrincipalShell shell = PrincipalShell();
                                 shell.main(args);
                                 break;
+                            case 4: 
+                                MezclaNatural mezcla = MezclaNatural();
+                                mezcla.main(args);
                         }
                         
                     }

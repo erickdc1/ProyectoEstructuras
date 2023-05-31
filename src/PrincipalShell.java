@@ -15,10 +15,9 @@ public class PrincipalShell {
             numeros[i] = sc.nextInt();
         }
         //aqui se manda a llamar el metodo donde esta ordenando la matriz
-        ShellSort.shellSort(numeros);
+        ShellSort.ShellSort(numeros);
         //se imprime la matriz ordenada
         System.out.println("Matriz ordenada:");
         Imprimir.imprimir(numeros);
     }
-
 }

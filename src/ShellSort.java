@@ -8,7 +8,7 @@
  * @author barre
  */
 class ShellSort {
-    public static void shellSort(int[] numeros) {
+    public static void ShellSort(int[] numeros) {
         //asignamos a n los numeros ingresados por el usuario en la clase principal
         int n = numeros.length;
         //aqui se calcula el intervalo inicial, este intervalo siempre se va establecer como la mitad de la matriz
