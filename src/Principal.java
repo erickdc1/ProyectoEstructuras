@@ -81,15 +81,21 @@ public class Principal {
                         System.out.println("Ordenamiento Radix");
                         System.out.println("Ordenamiento Quicksort");
                         System.out.println("Ordenamiento Intercalacion");
-                        System.out.println("Ordenamiento Intercalacion");
+                        System.out.println("Ordenamiento Intercalacion directa");
                         opc = sc.nextInt();
                         switch (opc){
                             case 1:
                                 Burbuja burb = new Burbuja();
                                 burb.main(args);
+                                break;
                             case 2:
                                 Insercion insc = new Insercion();
                                 insc.main(args);
+                                break;
+                            case 3: 
+                                PrincipalShell shell = PrincipalShell();
+                                shell.main(args);
+                                break;
                         }
                         
                     }
