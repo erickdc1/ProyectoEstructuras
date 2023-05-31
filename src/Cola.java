@@ -89,4 +89,14 @@ public class Cola
             JOptionPane.showMessageDialog(null, "Cola eliminada correctamente.");
         }
     }
+
+    public Cola copiar() {
+        Cola copia = new Cola();
+        NodoCola aux = inicio;
+        while (aux != null) {
+            copia.Insertar(aux.dato);
+            aux = aux.siguiente;
+        }
+        return copia;
+    }
 }

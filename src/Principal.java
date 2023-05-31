@@ -130,7 +130,7 @@ public class Principal {
                             break;   
                             case 2:      
                             Colas Colas = new Colas();      
-                            Colas.main(args);  
+                            Colas.main(args); 
                         case 3:       
                             Listas_enlazadas Listas_enlazadas  = new Listas_enlazadas();       
                             Listas_enlazadas .main(args);       

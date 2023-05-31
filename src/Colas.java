@@ -82,7 +82,7 @@ public class Colas
                         col.MostrarCola();
                         break;
                     case 9:
-                        cola copia = col.copiar();
+                        Cola copia = col.copiar();
                         StringBuilder sb = new StringBuilder("La cola copiada es: \n");
                         while (!copia.Vacia()) {
                             int elem = copia.Quitar();
