@@ -1,4 +1,7 @@
 
+import javax.swing.JOptionPane;
+
+
 public class Cola 
 {
     private NodoCola inicio;
@@ -78,15 +81,6 @@ public class Cola
         JOptionPane.showMessageDialog(null, "Elementos de la cola: " + mensaje);
     }
 
-    public cola copiar() {
-        cola copia = new cola();
-        NodoCola aux = inicio;
-        while (aux != null) {
-            copia.Insertar(aux.dato);
-            aux = aux.siguiente;
-        }
-        return copia;
-    }
 
     public void eliminarCola() {
         int opcion = JOptionPane.showConfirmDialog(null, "¿Seguro que desea eliminar la cola?", "Eliminar cola", JOptionPane.YES_NO_OPTION);
