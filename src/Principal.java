@@ -88,7 +88,7 @@ public class Principal {
                                 PrincipalShell shell = PrincipalShell();
                                 shell.main(args);
                                 break;
-                            case 4: 
+                            case 4:
                                 MezclaNatural mezcla = MezclaNatural();
                                 mezcla.main(args);
                                 break;
@@ -109,19 +109,46 @@ public class Principal {
                                 inter.main(args);
                                 break;
                         }
-                        
+
                     }
                     break;
                 case 4:
+                        System.out.println("----------------------------------");
+                        System.out.println("MENU: ESTRUCTURAS lineales");
+                        System.out.println("----------------------------------");
+                        System.out.println("1.Pilas");
+                        System.out.println("2.Cola");
+                        System.out.println("3.Listas");
+                        System.out.println("4.Volver al menu principal");
+                int opcion = sc.nextInt();
+                        System.out.println("----------------------------------");
+                        System.out.println("");
+                        switch (opcion){
+                                        case 1:
+                                            Pilas Mpilas = new Pilas ();
+                                            Mpilas.main();
+                                            break;
+                                        case 2:
+                                            Colas Plistas = new Colas();
+                                            Colas.main();
+                                            break;
+                                        case 3:
+                                             Listas_enlazadas Lista = new Listas_enlazadas ();
+                                            Lista.main();
+                                            break;
+                                        default:
+                                            System.out.println("La opcion no existe");
+                                             } 
                     break;
+                    
                 case 5:
-                	System.out.println("Ingresa 1 para la actividad de grafos2 o 2 para la actividad de grafos3");
-                	opc=sc.nextInt();
-                	switch(opc){
-                		case 1:
-                		grafos1 grafo1 = new grafos1(5,5);
-                		grafo1.main(args);
-                		break;
+                    System.out.println("Ingresa 1 para la actividad de grafos2 o 2 para la actividad de grafos3");
+                    opc = sc.nextInt();
+                    switch (opc) {
+                        case 1:
+                            grafos1 grafo1 = new grafos1(5, 5);
+                            grafo1.main(args);
+                            break;
                 		case 2:
                 		Menu grafo2 = new Menu();
                 		grafo2.main(args);
