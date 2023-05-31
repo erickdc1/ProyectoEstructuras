@@ -99,6 +99,10 @@ public class Principal {
                             case 4: 
                                 MezclaNatural mezcla = MezclaNatural();
                                 mezcla.main(args);
+                                break;
+                            case 5:
+                                Radix radix = new Radix();
+                                radix.main(args);
                         }
                         
                     }
