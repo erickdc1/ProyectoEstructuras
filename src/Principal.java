@@ -129,8 +129,8 @@ public class Principal {
                             pilas.main(args);   
                             break;   
                         case 3:       
-                            Listas_enlazadas Lista = new Listas_enlazadas();       
-                            Lista.main(args);       
+                            Listas_enlazadas Listas_enlazadas  = new Listas_enlazadas();       
+                            Listas_enlazadas .main(args);       
                             break;   
                         default:      
                             System.out.println("La opción no existe");       
