@@ -108,6 +108,10 @@ public class Principal {
                                 Quicksort quick = new Quicksort();
                                 quick.main(args);
                                 break;
+                            case 7:
+                                MezclaDirecta mezclaD = new MezclaDirecta();
+                                mezclaD.main(args);
+                                break;
                         }
                         
                     }
