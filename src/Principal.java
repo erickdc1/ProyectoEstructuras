@@ -125,8 +125,8 @@ public class Principal {
                     System.out.println("");
                     switch (opc) {  
                         case 1:      
-                            Pilas pila = new Pilas();      
-                            pila.main();   
+                            Pilas pilas = new Pilas();      
+                            pilas.main();   
                             break;   
                         case 3:       
                             Listas_enlazadas Lista = new Listas_enlazadas();       
