@@ -74,18 +74,18 @@ public class Principal {
                     boolean sali = false;
                     while (!sali){
                         System.out.println("Metodos de ordenamiento");
-                        System.out.println("Ordenamiento burbuja");
-                        System.out.println("Ordenamiento insercion");
-                        System.out.println("Ordenamiento ShellSort");
-                        System.out.println("Ordenamiento Mezcla Natural");
-                        System.out.println("Ordenamiento Radix");
-                        System.out.println("Ordenamiento Quicksort");
-                        System.out.println("Ordenamiento Mezcla Directa");
-                        System.out.println("Ordenamiento Intercalacion");
+                        System.out.println("1. Ordenamiento burbuja");
+                        System.out.println("2. Ordenamiento insercion");
+                        System.out.println("3. Ordenamiento ShellSort");
+                        System.out.println("4. Ordenamiento Mezcla Natural");
+                        System.out.println("5. Ordenamiento Radix");
+                        System.out.println("6. Ordenamiento Quicksort");
+                        System.out.println("7. Ordenamiento Mezcla Directa");
+                        System.out.println("8. Ordenamiento Intercalacion");
                         opc = sc.nextInt();
                         switch (opc){
                             case 1:
-                                Burbuja burb = new Burbuja();
+                                BusqBurbuja burb = new BusqBurbuja();
                                 burb.main(args);
                                 break;
                             case 2:
