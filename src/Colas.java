@@ -1,23 +1,25 @@
 import javax.swing.JOptionPane;
 public class Colas 
 {
+    public static void main(String[] args) {
+        cola col = new cola();
         int opcion = 0;
         int elemento;
 
         do {
             try {
-                opcion = Integer.parseInt(JOptionPane.showInputDialog(null, """
-                                                                            1.Insertar un elemento en la cola
-                                                                            2. Quitar un elemento de la cola
-                                                                            3.\u00bfLa cola se encuentra vacia?
-                                                                            4.Elemento ubicado al inicio de la cola
-                                                                            5.Elemento ubicado al final de la cola
-                                                                            6.Tama\u00f1o de la cola
-                                                                            7.Invertir Cola
-                                                                            8.Imprimir la cola actual
-                                                                            9.Copiar Cola
-                                                                            10.Eliminar todos los elementos de la cola
-                                                                            11.Salir""", "Menu de opciones de una Cola", JOptionPane.QUESTION_MESSAGE));
+                opcion = Integer.parseInt(JOptionPane.showInputDialog(null,
+                        "1.Insertar un elemento en la cola\n"
+                        + "2. Quitar un elemento de la cola\n"
+                        + "3.¿La cola se encuentra vacia?\n"
+                        + "4.Elemento ubicado al inicio de la cola\n"
+                        + "5.Elemento ubicado al final de la cola\n"
+                        + "6.Tamaño de la cola\n"
+                        + "7.Invertir Cola\n"
+                        + "8.Imprimir la cola actual\n"
+                        + "9.Copiar Cola\n"
+                        + "10.Eliminar todos los elementos de la cola\n"
+                        + "11.Salir", "Menu de opciones de una Cola", JOptionPane.QUESTION_MESSAGE));
 
                 switch (opcion) {
                     case 1:
@@ -112,4 +114,4 @@ public class Colas
 
         } while (opcion != 11);
     }
-
+}
