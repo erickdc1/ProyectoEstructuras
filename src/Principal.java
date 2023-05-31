@@ -103,6 +103,11 @@ public class Principal {
                             case 5:
                                 Radix radix = new Radix();
                                 radix.main(args);
+                                break;
+                            case 6:
+                                Quicksort quick = new Quicksort();
+                                quick.main(args);
+                                break;
                         }
                         
                     }
