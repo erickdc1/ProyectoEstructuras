@@ -87,6 +87,9 @@ public class Principal {
                             case 1:
                                 Burbuja burb = new Burbuja();
                                 burb.main(args);
+                            case 2:
+                                Insercion insc = new Insercion();
+                                insc.main(args);
                         }
                         
                     }
