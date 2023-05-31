@@ -75,29 +75,26 @@ public class GrafoMatriz {
         return matAd[va][vb] == 1;
     }
 	
-	void puntosArticulacion(GrafoMatriz g, int v, int[] num, int paso,boolean[] visitado, int[] arista, int[] bajo) throws Exception {visitado[v] = true;
-	        num[v] = ++paso;
-	        bajo[v] = num[v]; // valor inicial para cálculo de bajo() 
-	        for (int w = 0; w < g.numeroV; w++) {
-	            if (g.adyacente(v, w)) // adyacente w 
-	            {
-	                if (!visitado[w]) {
-	                    arista[w] = v; 
-	                    puntosArticulacion(g, w, num, paso, visitado,
-	                            arista, bajo);
-	                    if (bajo[w] >= num[v]) // v cumple la regla 3
-	                    {
-	                        System.out.println("Vértice " + v
-	                                + " es punto de articulación");
-	                    }
-	                    bajo[v] = Math.min(bajo[v], bajo[w]);
-	                } else if (arista[v] != w) // arco hacia atrás 
-	                {
-	                    bajo[v] = Math.min(bajo[v], num[w]);
-	                }
-	            }
-	        }
-	    }
+	public void puntosArticulacion(GrafoMatriz g, int v, int[] num, int paso, boolean[] visitado, int[] arista, int[] bajo) throws Exception {
+        visitado[v] = true;
+        num[v] = ++paso;
+        bajo[v] = num[v]; // valor inicial para cálculo de bajo()
+
+        for (int w = 0; w < g.numeroV; w++) {
+            if (g.adyacente(v, w)) { // adyacente w
+                if (!visitado[w]) {
+                    arista[w] = v;
+                    puntosArticulacion(g, w, num, paso, visitado, arista, bajo);
+                    if (bajo[w] >= num[v]) {
+                        System.out.println("Vértice " + v + " es punto de articulación");
+                    }
+                    bajo[v] = Math.min(bajo[v], bajo[w]);
+                } else if (arista[v] != w) {
+                    bajo[v] = Math.min(bajo[v], num[w]);
+                }
+            }
+        }
+        }
 		
 	
 
