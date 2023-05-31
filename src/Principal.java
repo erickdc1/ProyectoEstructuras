@@ -126,11 +126,11 @@ public class Principal {
                     switch (opc) {  
                         case 1:      
                             Pilas pilas = new Pilas();      
-                            pilas.main();   
+                            pilas.main(args);   
                             break;   
                         case 3:       
                             Listas_enlazadas Lista = new Listas_enlazadas();       
-                            Lista.main();       
+                            Lista.main(args);       
                             break;   
                         default:      
                             System.out.println("La opción no existe");       
