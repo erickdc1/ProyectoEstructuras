@@ -1,14 +1,5 @@
 
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
-/**
- *
- * @author Erick DC
- */
 public class Binaria {
     public static int buscar(int num, int vect[]) {
         int izq, der, cen;

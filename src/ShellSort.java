@@ -1,12 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 
-/**
- *
- * @author barre
- */
 class ShellSort {
     public static void ShellSort(int[] numeros) {
         //asignamos a n los numeros ingresados por el usuario en la clase principal

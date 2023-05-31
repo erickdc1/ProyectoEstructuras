@@ -1,12 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 
-/**
- *
- * @author barre
- */
 class Intercala {
 static void intercalar(int i, int m, int j, int a[]) {
         int[] b = new int[a.length]; 
