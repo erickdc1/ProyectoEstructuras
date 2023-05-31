@@ -128,6 +128,9 @@ public class Principal {
                             Pilas pilas = new Pilas();      
                             pilas.main(args);   
                             break;   
+                            case 2:      
+                            Colas Colas = new Colas();      
+                            Colas.main(args);  
                         case 3:       
                             Listas_enlazadas Listas_enlazadas  = new Listas_enlazadas();       
                             Listas_enlazadas .main(args);       
