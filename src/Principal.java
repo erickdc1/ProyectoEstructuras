@@ -112,6 +112,9 @@ public class Principal {
                                 MezclaDirecta mezclaD = new MezclaDirecta();
                                 mezclaD.main(args);
                                 break;
+                            case 8:
+                                Intercalacion inter  new Intercalacion();
+                                inter.main(args);
                         }
                         
                     }
