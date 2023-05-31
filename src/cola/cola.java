@@ -1,5 +1,3 @@
-package cola;
-
 import javax.swing.JOptionPane;
 
 /**

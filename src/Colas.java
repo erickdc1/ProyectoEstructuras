@@ -1,8 +1,6 @@
 import javax.swing.JOptionPane;
 public class Colas 
 {
-    public static void main(String[] args) {
-        cola col = new cola();
         int opcion = 0;
         int elemento;
 
@@ -114,4 +112,4 @@ public class Colas
 
         } while (opcion != 11);
     }
-}
+
