@@ -113,8 +113,9 @@ public class Principal {
                                 mezclaD.main(args);
                                 break;
                             case 8:
-                                Intercalacion inter  new Intercalacion();
+                                Intercalacion inter = new Intercalacion();
                                 inter.main(args);
+                                break;
                         }
                         
                     }
