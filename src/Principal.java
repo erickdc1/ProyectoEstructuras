@@ -113,34 +113,31 @@ public class Principal {
                     }
                     break;
                 case 4:
-                        System.out.println("----------------------------------");
-                        System.out.println("MENU: ESTRUCTURAS lineales");
-                        System.out.println("----------------------------------");
-                        System.out.println("1.Pilas");
-                        System.out.println("2.Cola");
-                        System.out.println("3.Listas");
-                        System.out.println("4.Volver al menu principal");
-                int opcion = sc.nextInt();
-                        System.out.println("----------------------------------");
-                        System.out.println("");
-                        switch (opcion){
-                                        case 1:
-                                            Pilas Mpilas = new Pilas ();
-                                            Mpilas.main();
-                                            break;
-                                        case 2:
-                                            Colas Plistas = new Colas();
-                                            Colas.main();
-                                            break;
-                                        case 3:
-                                             Listas_enlazadas Lista = new Listas_enlazadas ();
-                                            Lista.main();
-                                            break;
-                                        default:
-                                            System.out.println("La opcion no existe");
-                                             } 
-                    break;
-                    
+                    System.out.println("----------------------------------");
+                    System.out.println("MENU: ESTRUCTURAS lineales");
+                    System.out.println("----------------------------------");
+                    System.out.println("1.Pilas");
+                    System.out.println("2.Cola");
+                    System.out.println("3.Listas");
+                    System.out.println("4.Volver al menu principal");
+                    opc = sc.nextInt();
+                    System.out.println("----------------------------------");
+                    System.out.println("");
+                    switch (opc) {  
+                        case 1:      
+                            Pilas pila = new Pilas();      
+                            pila.main();   
+                            break;   
+                     
+                        case 3:       
+                            Listas_enlazadas Lista = new Listas_enlazadas();       
+                            Lista.main();       
+                            break;   
+                        default:      
+                            System.out.println("La opción no existe");       
+                            break;
+                    }                      
+                    break;                    
                 case 5:
                     System.out.println("Ingresa 1 para la actividad de grafos2 o 2 para la actividad de grafos3");
                     opc = sc.nextInt();
