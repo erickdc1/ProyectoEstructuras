@@ -4,7 +4,7 @@ import javax.swing.JOptionPane;
 
 public class Principal {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         int opc;
         Scanner sc = new Scanner(System.in);
         boolean salir = false;
@@ -115,6 +115,20 @@ public class Principal {
                 case 4:
                     break;
                 case 5:
+                	System.out.println("Ingresa 1 para la actividad de grafos2 o 2 para la actividad de grafos3");
+                	opc=sc.nextInt();
+                	switch(opc){
+                		case 1:
+                		grafos1 grafo1 = new grafos1(5,5);
+                		grafo1.main(args);
+                		break;
+                		case 2:
+                		Menu grafo2 = new Menu();
+                		grafo2.main(args);
+                		break;
+                		default: System.out.println("Ingresa una opcion valida");
+                	}
+               
                     break;
                 case 6:
                     break;
