@@ -2,7 +2,7 @@ import javax.swing.JOptionPane;
 public class Colas 
 {
     public static void main(String[] args) {
-        cola col = new cola();
+        Cola col = new Cola();
         int opcion = 0;
         int elemento;
 
