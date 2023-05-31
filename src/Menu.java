@@ -55,27 +55,31 @@ public class Menu {
     		nomY=scL.nextLine();
     		bol=grafoMatriz.adyacente(nomX, nomY);
     		if(bol==true) {
-    			System.out.println("Si hay adyacencia entre los vertices");
-    		} else {
-    			System.out.println("No hay adyacencia entre los vertices");
-    		}
-        	break;
-        case 6:
-        	System.out.print("Introduce el numero del vertice: ");
-        	nVert = scL.nextLine();
-    		int [] num = new int [grafoMatriz.numVertice(nVert)];
-    		int [] bajo = new int [grafoMatriz.numVertice(nVert)];
-    		int [] arista = new int [grafoMatriz.numVertice(nVert)];
-    		boolean [] visitado = new boolean[grafoMatriz.numVertice(nVert)];
-    		for (int i = 0; i < grafoMatriz.numVertice(nVert); i++) {
-    			visitado[i] = false;	
-    		}
-    		grafoMatriz.puntosArticulacion(grafoMatriz, maxVert, num, cont, visitado, arista, bajo);
-    		break;
-        default:
-        	System.out.print("INGRESA OPCION VALIDA");
-        	}
-		}
+    		                      System.out.println("Si hay adyacencia entre los vertices");
+                        } else {
+                            System.out.println("No hay adyacencia entre los vertices");
+                        }
+                        break;
+                    case 6:
+                        System.out.print("Introduce el numero del vertice: ");
+                        int v = sc.nextInt();
+                        int[] num = new int[grafoMatriz.numeroV];
+                        int[] bajo = new int[grafoMatriz.numeroV];
+                        int[] arista = new int[grafoMatriz.numeroV];
+                        boolean[] visitado = new boolean[grafoMatriz.numeroV];
+                        for (int i = 0; i < grafoMatriz.numeroV; i++) {
+                            visitado[i] = false;
+                        }
+                        try {
+                            grafoMatriz.puntosArticulacion(grafoMatriz, v, num, 0, visitado, arista, bajo);
+                        } catch (Exception e) {
+                            System.out.println("Error al ejecutar el algoritmo de puntos de articulación: " + e.getMessage());
+                        }
+                        break;
+                    default:
+                        System.out.print("INGRESA OPCION VALIDA");
+                }
+            }
         sc.close();
         scL.close();
 	}

@@ -78,10 +78,10 @@ public class GrafoMatriz {
 	public void puntosArticulacion(GrafoMatriz g, int v, int[] num, int paso, boolean[] visitado, int[] arista, int[] bajo) throws Exception {
         visitado[v] = true;
         num[v] = ++paso;
-        bajo[v] = num[v]; // valor inicial para cálculo de bajo()
+        bajo[v] = num[v]; 
 
         for (int w = 0; w < g.numeroV; w++) {
-            if (g.adyacente(v, w)) { // adyacente w
+            if (g.adyacente(v, w)) { 
                 if (!visitado[w]) {
                     arista[w] = v;
                     puntosArticulacion(g, w, num, paso, visitado, arista, bajo);
@@ -94,9 +94,8 @@ public class GrafoMatriz {
                 }
             }
         }
-        }
-		
-	
-
-	
+    }
 }
+        
+        
+        
